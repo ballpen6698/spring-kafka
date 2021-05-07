@@ -1,0 +1,17 @@
+kafka:
+  boot:
+    server: localhost:9092
+  topic:
+    customer:
+      name: customer
+    balance:
+      name: balance
+    customerBalance:
+      name: customerBalance
+  consumer:
+    group:
+      customer: customergroupid
+      balance: balancegroupid
+      customerbalance: balancegroupid
+server:
+  port: 8082
